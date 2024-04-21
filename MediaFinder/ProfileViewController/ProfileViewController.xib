@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProfileViewController" customModule="MediaFinder" customModuleProvider="target">
+            <connections>
+                <outlet property="LocationLabel" destination="x2G-00-9YH" id="L1O-gS-a6b"/>
+                <outlet property="PasswordLabel" destination="o8s-6a-cUa" id="ZTd-2V-5sX"/>
+                <outlet property="buttonAddPhoto" destination="l8J-k5-Ehd" id="omb-IS-bof"/>
+                <outlet property="eamilLabel" destination="xwx-6s-ipz" id="R28-Jq-UXq"/>
+                <outlet property="imageProfile" destination="W2t-10-aIs" id="mpZ-79-P06"/>
+                <outlet property="userNameLabel" destination="zla-a1-zRH" id="FCe-VR-xiH"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="Evc-Lk-0pR">
+                    <rect key="frame" x="110.66666666666669" y="98.999999999999986" width="172" height="197.66666666666663"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Profile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zj7-9W-wmI">
+                            <rect key="frame" x="47.666666666666664" y="0.0" width="76.666666666666686" height="28.666666666666668"/>
+                            <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="24"/>
+                            <color key="textColor" name="colorApp"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Vector" translatesAutoresizingMaskIntoConstraints="NO" id="W2t-10-aIs">
+                            <rect key="frame" x="26.999999999999986" y="53.666666666666657" width="118.00000000000001" height="118"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="118" id="c7l-95-hFm"/>
+                                <constraint firstAttribute="width" secondItem="W2t-10-aIs" secondAttribute="height" multiplier="1:1" id="xn9-Gh-yAz"/>
+                            </constraints>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l8J-k5-Ehd">
+                            <rect key="frame" x="0.0" y="196.66666666666669" width="172" height="1"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="X7n-ND-4YV"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title=" Click Change photo">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="butttonAddPhoto:" destination="-1" eventType="touchUpInside" id="dD0-98-QEV"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="72K-ce-Tx4">
+                    <rect key="frame" x="25" y="357.66666666666669" width="343" height="297.00000000000006"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="userName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j9r-FX-J2n">
+                            <rect key="frame" x="0.0" y="0.0" width="343" height="24"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                            <color key="textColor" name="Select"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ihab" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zla-a1-zRH">
+                            <rect key="frame" x="0.0" y="39" width="343" height="24"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" name="SelectTabBar"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Eamil" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B4L-Dj-Auo">
+                            <rect key="frame" x="0.0" y="78" width="343" height="24"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                            <color key="textColor" name="Select"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ihab@gmail.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xwx-6s-ipz">
+                            <rect key="frame" x="0.0" y="117" width="343" height="24"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" name="SelectTabBar"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6LR-xH-yey">
+                            <rect key="frame" x="0.0" y="155.99999999999994" width="343" height="24"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                            <color key="textColor" name="Select"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mansoura" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x2G-00-9YH">
+                            <rect key="frame" x="0.0" y="194.99999999999994" width="343" height="24"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" name="SelectTabBar"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yxa-7n-vSy">
+                            <rect key="frame" x="0.0" y="233.99999999999994" width="343" height="24"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                            <color key="textColor" name="Select"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="01098119191" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o8s-6a-cUa">
+                            <rect key="frame" x="0.0" y="272.99999999999994" width="343" height="24"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" name="SelectTabBar"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7HE-te-e6c">
+                    <rect key="frame" x="10" y="316.66666666666669" width="373" height="1"/>
+                    <color key="backgroundColor" name="colorApp"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="iTX-dw-hk7"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="7HE-te-e6c" secondAttribute="trailing" constant="10" id="0Tw-qS-cBt"/>
+                <constraint firstItem="72K-ce-Tx4" firstAttribute="top" secondItem="7HE-te-e6c" secondAttribute="bottom" constant="40" id="5lk-hI-hWA"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="72K-ce-Tx4" secondAttribute="trailing" constant="25" id="BDU-HL-Vna"/>
+                <constraint firstItem="7HE-te-e6c" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="FCH-d6-9hA"/>
+                <constraint firstItem="7HE-te-e6c" firstAttribute="top" secondItem="Evc-Lk-0pR" secondAttribute="bottom" constant="20" id="G4L-EM-VXU"/>
+                <constraint firstItem="Evc-Lk-0pR" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="40" id="a8l-TB-3QX"/>
+                <constraint firstItem="Evc-Lk-0pR" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="k9U-MH-mba"/>
+                <constraint firstItem="72K-ce-Tx4" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="25" id="w9y-2D-k5U"/>
+            </constraints>
+            <point key="canvasLocation" x="55.725190839694655" y="32.394366197183103"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Vector" width="16" height="18.333333969116211"/>
+        <namedColor name="Select">
+            <color red="0.42352941176470588" green="0.35686274509803922" blue="0.4823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="SelectTabBar">
+            <color red="0.75294117647058822" green="0.42352941176470588" blue="0.51764705882352946" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="colorApp">
+            <color red="0.25490196078431371" green="0.16078431372549021" blue="0.35294117647058826" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
